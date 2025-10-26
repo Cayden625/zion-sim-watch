@@ -9,8 +9,8 @@ interface MetricCardProps {
 
 export const MetricCard = ({ label, children, className = '' }: MetricCardProps) => {
   return (
-    <Card className={`p-4 bg-card border border-border shadow-lg ${className}`}>
-      <div className="text-sm text-muted-foreground uppercase tracking-wide mb-2">
+    <Card className={`p-2 bg-card border border-border shadow-lg ${className}`}>
+      <div className="text-[8px] text-muted-foreground uppercase tracking-wide mb-1">
         {label}
       </div>
       {children}
