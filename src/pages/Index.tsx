@@ -13,10 +13,6 @@ const Index = () => {
           <h1 className="text-xs font-bold text-primary tracking-tight leading-tight">
             Zion System Monitor
           </h1>
-          <h2 className="text-xs font-bold text-primary">(SIMULATION)</h2>
-          <p className="text-[8px] text-muted-foreground mt-1">
-            All readings simulated for demo only.
-          </p>
         </div>
 
         {/* System Mode Card */}
@@ -42,7 +38,7 @@ const Index = () => {
         </MetricCard>
 
         {/* Heart Rate Card */}
-        <MetricCard label="Heart Rate (SIMULATED)">
+        <MetricCard label="Heart Rate">
           <div className="flex items-center gap-1">
             <Activity className="w-3 h-3 text-watch-danger animate-pulse" />
             <div className="text-lg font-bold text-foreground">
@@ -88,13 +84,6 @@ const Index = () => {
             </div>
           )}
         </MetricCard>
-
-        {/* HealthKit Placeholder */}
-        <div className="mt-2 p-2 bg-secondary/50 rounded border border-border">
-          <p className="text-[7px] text-muted-foreground italic leading-tight">
-            Apple Watch / HealthKit integration placeholder: Future real heart-rate integration would be implemented here using HealthKit APIs.
-          </p>
-        </div>
 
         {/* Footer */}
         <div className="text-center text-[8px] text-muted-foreground pt-2">
